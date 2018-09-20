@@ -4,8 +4,8 @@ baremetal:
 
 cookbooks:
   hopsworks:
-    github: "ErmiasG/hopsworks-chef"
-    branch: "HOPSWORKS-284"
+    github: "hopshadoop/hopsworks-chef"
+    branch: "master"
 
 attrs:
   install:
@@ -15,7 +15,8 @@ attrs:
       interface: enp0s8
   hops:
      num_replicas: 2
-
+  tensorflow:
+     mpi: true
 groups:
   namenodes:
     size: 1
